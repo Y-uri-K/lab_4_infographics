@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ layouts }) => {
   const getGradientColor = (adoption: number) => {
-    const hue = (adoption * 1.2).toFixed(0); // Higher adoption = more green
+    const hue = (adoption * 1.2).toFixed(0);
     return `hsl(${hue}, 70%, 50%)`;
   };
 
